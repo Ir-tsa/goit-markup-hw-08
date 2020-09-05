@@ -1,0 +1,39 @@
+p {
+  margin: 0px;
+}
+.advantage {
+  @extend %flex-container;
+}
+
+.advantage .items {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+  &:before {
+    display: block;
+    content: "";
+    height: 120px;
+    /* outline: 2px solid red; */
+    border: 1px solid $white;
+    border-radius: 4px;
+    background-color: $second-bgc;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantage .icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.advantage .icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.advantage .icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.advantage .icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}

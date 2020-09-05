@@ -1,0 +1,37 @@
+.section.team {
+  background: $second-bgc;
+}
+
+.personnel.list {
+  @extend %flex-container;
+
+  .text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+.personnel.list .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: $white;
+  /* background-color: steelblue; */
+
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+.title-lower {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: $title-text-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
