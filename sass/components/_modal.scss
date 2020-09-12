@@ -11,6 +11,9 @@
 
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -24,36 +27,53 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   background-color: $white;
   font-size: 12px;
   letter-spacing: 0.01em;
   line-height: 1.17;
-
-  min-width: 528px;
-  min-height: 581px;
   padding: 40px;
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 481px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    max-width: 450px;
+    width: 100%;
+    // min-height: 608px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    // min-height: 581px;
+  }
 
   &-title {
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.05px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-text-color;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
 
   &-forms {
-    min-width: 448px;
     padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-top: 12px;
+
+    @media screen and (min-width: 1200px) {
+      min-width: 448px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      margin-top: 12px;
+    }
   }
 }
 
@@ -89,8 +109,12 @@ textarea {
   display: flex;
   flex-direction: column;
   text-align: start;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+  }
 
   &:focus-within {
     color: $accent-color;
@@ -99,10 +123,15 @@ textarea {
   }
 
   &-checkbox {
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.17;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
@@ -129,10 +158,14 @@ textarea {
   } */
 
 .field-form .textarea-form {
-  padding: 11px 12px 11px;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 11px 12px 11px;
+  }
 
   &:focus-within {
     border: 1px solid $accent-color;

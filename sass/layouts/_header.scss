@@ -5,15 +5,15 @@
   }
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header {
   position: relative;
 }
 .container.header {
   padding-top: 0px;
   padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .site-nav {
   display: flex;

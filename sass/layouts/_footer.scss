@@ -12,19 +12,26 @@ footer {
 .container-footer {
   margin-right: auto;
   margin-left: auto;
-  // width: 1200px;
+  max-width: 1200px;
   padding: 60px 15px;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
 }
+
 .address-container {
-  // width: 270px;
-  margin-right: 30px;
   display: inline-block;
-  margin-bottom: 9px;
   margin-bottom: 60px;
 }
 
@@ -39,8 +46,6 @@ address {
 }
 
 .link-container {
-  // width: 270px;
-  margin-right: 30px;
   margin-bottom: 60px;
 
   .title {
