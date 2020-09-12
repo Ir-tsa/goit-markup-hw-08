@@ -1,6 +1,7 @@
 footer {
   color: $white;
   background: $footer-bgc;
+  text-align: center;
 
   .title {
     color: $white;
@@ -9,46 +10,41 @@ footer {
   }
 }
 .container-footer {
-  display: flex;
-  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+  // width: 1200px;
   padding: 60px 15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .address-container {
-  width: 270px;
+  // width: 270px;
   margin-right: 30px;
   display: inline-block;
   margin-bottom: 9px;
+  margin-bottom: 60px;
 }
 
 address {
   font-style: normal;
   .link {
-    display: inline-block;
-    margin-top: 9px;
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      margin-top: 9px;
+    }
   }
 }
 
 .link-container {
-  width: 270px;
+  // width: 270px;
   margin-right: 30px;
+  margin-bottom: 60px;
 
   .title {
     margin-top: 0px;
-  }
-}
-.link-list {
-  margin: 0px;
-  display: flex;
-  padding-left: 0px;
-  justify-content: center;
-  padding-bottom: 24px;
-  list-style: none;
-
-  &.social-foot {
-    justify-content: start;
   }
 }
 
@@ -57,8 +53,10 @@ address {
 }
 
 .container-fotter .logo {
-  padding: 0px;
-  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    padding: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 .subscription .title {
@@ -79,7 +77,7 @@ address {
   fill: $white;
 }
 .input-email {
-  width: 358px;
+  width: 100%;
   background-color: $footer-bgc;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -90,5 +88,11 @@ address {
   line-height: 1.25;
   letter-spacing: 0.03em;
   padding: 15px 16px 15px;
-  margin-right: 10px;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 358px;
+  }
 }

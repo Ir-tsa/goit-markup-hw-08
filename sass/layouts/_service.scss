@@ -1,5 +1,9 @@
 .services {
-  @extend %flex-container;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   .title {
     color: $white;

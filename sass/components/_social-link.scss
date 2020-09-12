@@ -32,3 +32,23 @@
 .footer .link {
   color: $white;
 }
+
+.link-list {
+  margin: 0px;
+  padding-left: 0px;
+  padding-bottom: 24px;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &.social-foot {
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: start;
+    }
+  }
+}

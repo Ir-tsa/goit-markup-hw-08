@@ -2,27 +2,39 @@ p {
   margin: 0px;
 }
 .advantage {
-  @extend %flex-container;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .advantage .items {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+  }
 
-  &:nth-child(4n) {
-    margin-right: 0px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
-  &:before {
-    display: block;
-    content: "";
-    height: 120px;
-    /* outline: 2px solid red; */
-    border: 1px solid $white;
-    border-radius: 4px;
-    background-color: $second-bgc;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+}
+
+.advantage .items:before {
+  display: block;
+  content: "";
+  height: 120px;
+  /* outline: 2px solid red; */
+  border: 1px solid $white;
+  border-radius: 4px;
+  background-color: $second-bgc;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantage .icon-antenna::before {
