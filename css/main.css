@@ -509,7 +509,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .button-menu {
     display: none;
   }
@@ -917,7 +917,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav.list,
   .contacts.list {
     display: none;
@@ -1072,6 +1072,8 @@ header {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/ImgHero.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/ImgHero.jpg);
   }
@@ -1081,6 +1083,10 @@ header {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/ImgHero@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/ImgHero@2x.jpg);
+  }
+  .hero .section-title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -1093,15 +1099,6 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero .section-title {
-    font-size: 44px;
-    line-height: 1.36;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
 }
 
 p {
@@ -1467,7 +1464,7 @@ address {
   display: block;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-container.is-open {
     display: none;
   }

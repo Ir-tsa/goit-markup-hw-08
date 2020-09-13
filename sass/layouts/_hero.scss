@@ -49,6 +49,8 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -62,6 +64,11 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../../images/ImgHero@2x.jpg);
+
+      & .section-title {
+        font-size: 44px;
+        line-height: 1.36;
+      }
     }
   }
 }
@@ -76,10 +83,10 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 1.36;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   font-size: 44px;
+  //   line-height: 1.36;
+  //   padding-top: 200px;
+  //   padding-bottom: 200px;
+  // }
 }
