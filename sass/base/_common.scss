@@ -1,6 +1,9 @@
 html {
   box-sizing: border-box;
 }
+// * {
+//   outline: 2px solid red;
+// }
 
 *,
 *::befor,
@@ -110,4 +113,6 @@ body.modal-open {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }

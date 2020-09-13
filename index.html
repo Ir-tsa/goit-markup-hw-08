@@ -203,13 +203,30 @@
         </ul>
       </div>
     </section>
-    <!--our team-->
+    <!-- our team -->
     <section class="section team">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
            <ul class="personnel list">
             <li class="item">
-              <img src="./images/Игорь-Демьяненко.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <picture>
+              <source
+              srcset="
+              ./images/ИгорьДемьяненко.jpg 1x,
+              ./images/ИгорьДемьяненко@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+              />
+               <source srcset="
+                  ./images/ИгорьДемьяненкоTab.jpg    1x,
+                 ./images/ИгорьДемьяненкоTab@2x.jpg 2x
+                  " media="(min-width:768px)" />
+              <source srcset="
+                 ./images/ИгорьДемьяненкоMob.jpg    1x,
+                 ./images/ИгорьДемьяненкоMob@2x.jpg 2x
+                  " media="(max-width:767px)" />
+              <img src="./images/ИгорьДемьяненкоMob.jpg" alt="Игорь Демьяненко" width="450"/>
+              </picture>
               <h3 class="title-lower">Игорь Демьяненко</h3>
               <p class="text">Product Designer</p>
               <ul class="link-list social">
@@ -242,7 +259,21 @@
               </ul>
             </li>
             <li class="item">
-              <img src="./images/Ольга-Репина.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <source srcset="
+                  ./images/ОльгаРепина.jpg 1x,
+                  ./images/ОльгаРепина@2x.jpg 2x
+                  " media="(min-width:1200px)" />
+                <source srcset="
+                  ./images/ОльгаРепинаTab.jpg    1x,
+                  ./images/ОльгаРепинаTab@2x.jpg 2x
+                  " media="(min-width:768px)" />
+                <source srcset="
+                  ./images/ОльгаРепинаMob.jpg    1x,
+                  ./images/ОльгаРепинаMob@2x.jpg 2x
+                  " media="(max-width:767px)" />
+                <img src="./images/ОльгаРепинаMob.jpg" alt="Ольга Репина" width="450" />
+              </picture>
               <h3 class="title-lower">Ольга Репина</h3>
               <p class="text">Frontend Developer</p>
               <ul class="link-list social">
@@ -277,8 +308,22 @@
               </ul>
             </li>
             <li class="item">
-              <img src="./images/Николай-Тарасов.jpg" alt="Николай Тарасов" width="270" height="260" />
-              <h3 class="title-lower">Николай Тарасов</h3>
+              <picture>
+                <source srcset="
+                ./images/НиколайТарасов.jpg 1x,
+                ./images/НиколайТарасова@2x.jpg 2x
+                " media="(min-width:1200px)" />
+                <source srcset="
+                  ./images/НиколайТарасовTab.jpg    1x,
+                  ./images/НиколайТарасовTab@2x.jpg 2x
+                  " media="(min-width:768px)" />
+                <source srcset="
+                  ./images/НиколайТарасовMob.jpg    1x,
+                  ./images/НиколайТарасовMob@2x.jpg 2x
+                  " media="(max-width:767px)" />
+                <img src="./images/НиколайТарасовMob.jpg" alt="Николай Тарасов" width="450" />
+              </picture>
+             <h3 class="title-lower">Николай Тарасов</h3>
               <p class="text">Marketing</p>
               <ul class="link-list social">
                 <li class="social-item">
@@ -312,7 +357,21 @@
               </ul>
             </li>
             <li class="item">
-              <img src="./images/Михаил-Ермаков.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source srcset="
+                  ./images/МихаилЕрмаков.jpg 1x,
+                  ./images/МихаилЕрмакова@2x.jpg 2x
+                  " media="(min-width:1200px)" />
+                <source srcset="
+                  ./images/МихаилЕрмаковTab.jpg    1x,
+                  ./images/МихаилЕрмаковTab@2x.jpg 2x
+                  " media="(min-width:768px)" />
+                <source srcset="
+                  ./images/МихаилЕрмаковMob.jpg    1x,
+                  ./images/МихаилЕрмаковMob@2x.jpg 2x
+                  " media="(max-width:767px)" />
+                <img src="./images/МихаилЕрмаковMob.jpg" alt="Михаил Ермаков" width="450" />
+              </picture>
               <div>
                 <h3 class="title-lower">Михаил Ермаков</h3>
                 <p class="text">UI Designer</p>

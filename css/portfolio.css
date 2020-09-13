@@ -447,6 +447,8 @@ body.modal-open {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -639,6 +641,7 @@ img {
 
 header {
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .container.header {
@@ -862,15 +865,16 @@ header {
 .card {
   margin-right: auto;
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -889,19 +893,26 @@ header {
 
 @media screen and (min-width: 768px) {
   .card-list {
-    width: calc((100% - 30px) / 2);
-  }
-  .card-list .card .card-list:nth-child(2n) {
-    margin-right: 0px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .card-list {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 3 * 30px) / 3);
   }
-  .card-list .card .card-list:nth-child(3n) {
-    margin-right: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .card-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-list:first-child {
+    margin-bottom: 51px;
   }
 }
 
