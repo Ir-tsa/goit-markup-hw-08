@@ -42,7 +42,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/HeroTab@2x.jpg);
+        url(./../images/HeroTab@2x.jpg);
     }
   }
 }
@@ -55,7 +55,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/ImgHero.jpg);
+      url(./../images/ImgHero.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -63,7 +63,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/ImgHero@2x.jpg);
+        url(./../images/ImgHero@2x.jpg);
 
       & .section-title {
         font-size: 44px;
